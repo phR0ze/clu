@@ -1,0 +1,30 @@
+[package]
+name = "libclu"
+version = "0.0.1"
+edition = "2018"
+authors = ["phR0ze"]
+license = "MIT OR Apache-2.0"
+description = "Automation for the Arch Linux ecosystem"
+readme = "README.md"
+homepage = "https://github.com/phR0ze/clu/libclu"
+repository = "https://github.com/phR0ze/clu/libclu"
+exclude = [
+  "docs",
+  "examples",
+  ".git",
+  ".githooks",
+  ".github",
+  "tests",
+  "benches",
+  "target",
+  ".vscode"
+]
+
+[dependencies]
+
+# Examples and tests are built with these dependencies
+[dev-dependencies]
+
+# build.rs is built with these dependencies
+[build-dependencies]
+chrono = "0.4"
