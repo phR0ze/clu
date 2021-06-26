@@ -1,17 +1,18 @@
-pub const APP_NAME: &str = "CLU";
-pub const APP_VERSION: &str = env!("CARGO_PKG_VERSION");
-pub const APP_DESCRIPTION: &str = env!("CARGO_PKG_DESCRIPTION");
-pub const APP_GIT_COMMIT: &str = env!("APP_GIT_COMMIT");
-pub const APP_BUILD_DATE: &str = env!("APP_BUILD_DATE");
+pub mod core;
+pub mod error;
+pub mod model;
 
-pub fn test() {
-    println!(r#"From the lib"#);
-}
+pub use crate::error::{CluError, CluResult};
 
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
+/// All essential symbols in a simple consumable form
+///
+/// ### Examples
+/// ```
+/// use libclu::prelude::*;
+/// ```
+pub mod prelude {
+    pub use crate::{core::*, error::*, model::*};
+
+    // Re-exports
+    pub use fungus::prelude::*;
 }
