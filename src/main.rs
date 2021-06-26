@@ -1,5 +1,3 @@
-use libclu;
-
 fn main() {
     println!("{} - {}", libclu::APP_NAME, libclu::APP_DESCRIPTION);
     println!("{:->w$}", "-", w = 60);

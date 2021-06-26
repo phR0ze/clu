@@ -11,7 +11,6 @@
 * [Usage](#usage)
   * [Rustc requirments](#rustc-requirements)
 * [Contribute](#contribute)
-* [Contribute](#contribute)
   * [Git-Hook](#git-hook)
 * [License](#license)
   * [Contribution](#contribution)
